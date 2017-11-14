@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#08253c"
+    tools:context=".CopyAdminActivity"
+    >
+
+    <Button
+        android:id="@+id/cdoctor_past_adms"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cdoctor_all_adms"
+        android:layout_alignLeft="@+id/cdoctor_all_adms"
+        android:layout_marginBottom="21dp"
+        android:text="View Current Admissions"
+        android:textColor="#000"
+        android:textSize="19sp"
+        android:background="#abebc6"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/cdoctor_adms"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:text="Admissions Under Me"
+        android:textColor="#000"
+        android:textSize="19sp"
+        android:background="#abebc6"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/cdoctor_all_adms"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cdoctor_adms"
+        android:layout_alignLeft="@+id/cdoctor_adms"
+        android:layout_marginBottom="20dp"
+        android:text="View Admission History"
+        android:textColor="#000"
+        android:textSize="19sp"
+        android:background="#abebc6"
+        android:padding="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="767dp"
+    android:background="#08253c"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/TextViewDch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="PHARMACY REPORT"
+        android:textColor="#ffff00"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/ph_now_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditText01_ph"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="38dp"
+        android:text="Submit"
+        android:textColor="#000"
+        android:background="#abebc6"
+        android:textSize="22sp"
+        android:padding="10dp"
+         />
+
+    <EditText
+        android:id="@+id/EditText01_ph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextAdid_ph"
+        android:layout_below="@+id/EditTextAdid_ph"
+        android:layout_marginTop="49dp"
+        android:background="#ffffff"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText01_ph"
+        android:layout_alignLeft="@+id/EditText01_ph"
+        android:layout_marginBottom="23dp"
+        android:text="Billing Amount :"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ad_idt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextAdid_ph"
+        android:layout_below="@+id/TextViewDch"
+        android:layout_marginTop="28dp"
+        android:text="Pharmacist Note :"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/EditTextAdid_ph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewDch"
+        android:layout_below="@+id/ad_idt1"
+        android:background="#ffffff"
+        android:ems="10" />
+
+</RelativeLayout>

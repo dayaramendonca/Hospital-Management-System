@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08253c"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PatientStatusActivity" >
+
+    <TextView
+        android:id="@+id/textViewspp9"
+        style="@style/BlackText"
+        android:layout_width="match_parent"
+        android:minHeight="100sp"
+        android:layout_alignLeft="@+id/EditViewspp9"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:background="#CCFFFF"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnconf"
+        style="@style/BlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/EditViewspp9"
+        android:layout_below="@+id/AmtView01"
+        android:layout_marginTop="60dp"
+        android:text="CLICK TO CONFIRM IF ALREADY PAID"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:background="#abebc6"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/EditViewspp9"
+        style="@style/BlackText"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ppayment_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="#CCFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="BDT."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/AmtView01"
+        style="@style/BlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ppayment_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="OR"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFF00" />
+
+    <Button
+        android:id="@+id/ppayment_submit"
+        style="@style/BlackText"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="SUBMIT"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:background="#abebc6" />
+
+    <TextView
+        android:id="@+id/OrView01"
+        style="@style/BlackText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditViewspp9"
+        android:layout_alignParentRight="true"
+        android:text="INSERT PAYMENT AMOUNT:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFF00"
+        android:textSize="20sp" />
+
+</RelativeLayout>

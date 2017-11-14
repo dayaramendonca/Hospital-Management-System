@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#08253c"
+    tools:context=".AdminActivity"
+    >
+    
+     <TextView
+         android:id="@+id/textViewc1c"
+         style="@style/BlackText"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="211dp"
+         android:gravity="center"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:text="WELCOME! "
+         android:textColor="#FFFF00" />
+
+    <Button
+        android:id="@+id/cdoctor_oi"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cdoctor_op"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Investigations"
+        android:textColor="#000"
+        android:background="#abebc6" />
+
+    <Button
+        android:id="@+id/cdoctor_ps"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/cdoctor_oi"
+        android:layout_below="@+id/cdoctor_oi"
+        android:layout_marginTop="20dp"
+        android:text="Patient Status"
+        android:textColor="#000"
+        android:background="#abebc6" />
+
+    <Button
+        android:id="@+id/cdoctor_op"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/cdoctor_oi"
+        android:layout_below="@+id/textViewc1c"
+        android:layout_marginTop="33dp"
+        android:text="Prescription"
+        android:textColor="#000" 
+        android:background="#abebc6"/>
+
+    <Button
+        android:id="@+id/cdoctor_nps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdoctor_ps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Create New Prescription"
+        android:textColor="#000"
+        android:background="#abebc6"
+        android:padding="5dp" />
+
+</RelativeLayout>

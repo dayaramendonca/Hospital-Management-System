@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="767dp"
+    android:background="#08253c"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/TextViewDch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="DISCHARGE A PATIENT"
+        android:textColor="#ffff00"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewDch"
+        android:layout_below="@+id/TextViewDch"
+        android:layout_marginTop="24dp"
+        android:text="Patient ID :"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ad_idt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextAdid"
+        android:layout_below="@+id/edit_adid"
+        android:layout_marginTop="24dp"
+        android:text="Admission Id :"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit_adid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:background="#ffffff"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/EditTextAdid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_adid"
+        android:layout_below="@+id/ad_idt1"
+        android:background="#ffffff"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/discharge_now_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextAdid"
+        android:layout_below="@+id/EditTextAdid"
+        android:layout_marginTop="42dp"
+        android:text="Discharge Now"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:background="#abebc6"
+        android:padding="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.digitechlab.hospitalapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+      
+      <activity
+            android:name="com.admit.hospitalapp.HSplash"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.admit.hospitalapp.HospitalActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.HOSPITALACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="com.admit.hospitalapp.AdminActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.admit.hospitalapp.AllPatientsActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ALLPATIENTSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                <activity
+            android:name="com.admit.hospitalapp.AllStaffsActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ALLSTAFFSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                
+         <activity
+            android:name="com.admit.hospitalapp.AddPatientActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADDPATIENTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.AddStaffActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADDSTAFFACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+         
+          <activity
+            android:name="com.admit.hospitalapp.EmergencyActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.EMERGENCYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.AdmissionActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADMISSIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                  
+         <activity
+            android:name="com.admit.hospitalapp.CurrentAdmissionsActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.CURRENTADMISSIONSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+         
+        <activity
+            android:name="com.admit.hospitalapp.HistoryAdmissionsActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.HISTORYADMISSIONSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.admit.hospitalapp.DischargeActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.DISCHARGEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.NewAdmissionActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.NEWADMISSIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.AddNoticeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADDNOTICEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.AllTransactionsActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ALLTRANSACTIONSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.AllAppointmentsActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ALLAPPOINTMENTSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+        <activity
+            android:name="com.admit.hospitalapp.SingleAppointmentActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.SINGLEAPPOINTMENTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="com.admit.hospitalapp.SingleAdmissionActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.SINGLEADMISSIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.AdminPatientMenuActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADMINPATIENTMENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+        <activity
+            android:name="com.admit.hospitalapp.AdminStaffMenuActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADMINSTAFFMENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                  
+        
+        <activity
+            android:name="com.admit.hospitalapp.StaffInfoActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.STAFFINFOACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="com.admit.hospitalapp.PatientInfoActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.PATIENTINFOACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+               
+        
+         <activity
+            android:name="com.admit.hospitalapp.SetPPaymentActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.SETPPAYMENTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+        <activity
+            android:name="com.admit.hospitalapp.SPPaymentActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.SPPAYMENTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        
+        <!-- ACTIVITIES AFTER MARGING -->
+        
+        
+        
+          <activity
+            android:name="com.admit.hospitalapp.PatientActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.PATIENTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.admit.hospitalapp.PrescriptionActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.PRESCRIPTIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.admit.hospitalapp.PatientStatusActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.PATIENTSTATUSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.admit.hospitalapp.InvestigationActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.INVESTIGATIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.admit.hospitalapp.PPaymentActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.PPAYMENTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="com.admit.hospitalapp.ConsultingDoctorActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.CONSULTINGDOCTORACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.InvestigatingDoctorActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.INVESTIGATINGDOCTORACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.PharmacistActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.PHARMACISTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+         <activity
+            android:name="com.admit.hospitalapp.StaffStatusActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.STAFFSTATUSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <activity
+            android:name="com.admit.hospitalapp.PPaymentStatusActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.PPAYMENTSTATUSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        
+        <activity
+            android:name="com.admit.hospitalapp.AdminStaffNoticeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADMINSTAFFNOTICEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        
+         <activity
+            android:name="com.admit.hospitalapp.AddAppointmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADDAPPOINTMENTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+         <activity
+            android:name="com.admit.hospitalapp.ConsultingDoctorAdmissionsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.CONSULTINGDOCTORADMISSIONSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        
+         <activity
+            android:name="com.admit.hospitalapp.DoctorAdmissionsActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.DOCTORADMISSIONSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="com.admit.hospitalapp.PharmPatientMenuActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.PHARMPATIENTMENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+        <activity
+            android:name="com.admit.hospitalapp.IdoctorPatientMenuActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.IDOCTORPATIENTMENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="com.admit.hospitalapp.CdoctorPatientMenuActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.CDOCTORPATIENTMENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.AddPharmReportActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADDPHARMREPORTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity
+            android:name="com.admit.hospitalapp.SubAdminActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.SUBADMINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+                 
+         <activity
+            android:name="com.admit.hospitalapp.PatientStatusUpdateActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.PATIENTSTATUSUPDATEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+                          
+         <activity
+            android:name="com.admit.hospitalapp.AdmPrescriptionActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADMPRESCRIPTIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+
+                          
+         <activity
+            android:name="com.admit.hospitalapp.AdmInvestigationActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADMINVESTIGATIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+          <activity
+            android:name="com.admit.hospitalapp.AddInvestigationActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADDINVESTIGATIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+          
+                   
+        <activity
+            android:name="com.admit.hospitalapp.AddPrescriptionActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.ADDPRESCRIPTIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+      <activity
+            android:name="com.admit.hospitalapp.IncomeSummaryActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.admit.hospitalapp.INCOMESUMMARYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+         
+        
+    </application>
+
+</manifest>

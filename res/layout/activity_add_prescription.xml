@@ -1,0 +1,211 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="707dp"
+    android:background="#08253c"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <EditText
+        android:id="@+id/pdaEditText02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pmpEditText01"
+        android:layout_below="@+id/pmpEditText01"
+        android:layout_marginTop="45dp"
+        android:background="#ffffff"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/pmpEditText01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pt_ph_field"
+        android:layout_alignStart="@+id/p_username"
+        android:layout_below="@+id/pt_ph_field"
+        android:layout_marginTop="41dp"
+        android:background="#ffffff"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/pinv1EditText05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pgcEditText04"
+        android:layout_below="@+id/pgcEditText04"
+        android:layout_marginTop="39dp"
+        android:background="#ffffff"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/pinv2EditText06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pinv1EditText05"
+        android:layout_marginTop="37dp"
+        android:background="#ffffff"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/pinv3EditText03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pinv2EditText06"
+        android:layout_below="@+id/pinv2EditText06"
+        android:layout_marginTop="41dp"
+        android:background="#ffffff"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/pgcEditText04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pdaEditText02"
+        android:layout_below="@+id/TextView04"
+        android:background="#ffffff"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/pt_ph_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pcdEditText07"
+        android:layout_alignStart="@+id/p_username"
+        android:layout_below="@+id/TextView01"
+        android:background="#ffffff"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="NEW PRESCRIPTION"
+        android:textColor="#ffff00"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pinv3EditText03"
+        android:layout_below="@+id/pinv2EditText06"
+        android:layout_marginTop="19dp"
+        android:text="Investigation-3 :"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pinv1EditText05"
+        android:layout_below="@+id/pgcEditText04"
+        android:layout_marginTop="17dp"
+        android:text="Investigation-1 :"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pmpEditText01"
+        android:layout_below="@+id/pt_ph_field"
+        android:layout_marginTop="19dp"
+        android:text="Main Prescription :"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/prct_sbmt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pinv3EditText03"
+        android:layout_below="@+id/pinv3EditText03"
+        android:layout_marginTop="54dp"
+        android:text="Submit Prescription"
+        android:textColor="#000" 
+        android:background="#abebc6"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/pcdEditText07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_alignStart="@+id/p_username"
+        android:layout_below="@+id/p_username"
+        android:background="#ffffff"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/p_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView08"
+        android:layout_marginTop="28dp"
+        android:text="Complain Details :"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/p_username"
+        android:layout_below="@+id/pcdEditText07"
+        android:layout_marginTop="24dp"
+        android:text="Patient History :"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pgcEditText04"
+        android:layout_below="@+id/pdaEditText02"
+        android:layout_marginTop="29dp"
+        android:text="General Checkup :"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pinv2EditText06"
+        android:layout_below="@+id/pinv1EditText05"
+        android:layout_marginTop="15dp"
+        android:text="Investigation-2 :"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pdaEditText02"
+        android:layout_alignLeft="@+id/pdaEditText02"
+        android:layout_marginBottom="23dp"
+        android:text="Doctors Advice :"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+
+</ScrollView>
