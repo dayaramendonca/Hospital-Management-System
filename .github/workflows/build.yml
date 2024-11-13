@@ -1,21 +1,9 @@
-name: Build
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: [opened, synchronize, reopened]
-jobs:
-  sonarcloud:
-    name: SonarQube Cloud
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarQube Cloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+- name: SonarCloud Scan
+  uses: SonarSource/sonarcloud-github-action@master
+  with:
+    sonar-project-key: 'dayaramendonca_Hospital-Management-System'
+    sonar-organization: 'dayaramendonca'
+  env:
+    SONAR_TOKEN: ${{ secrets.e34fcd04183a64e2e77f14644ecfdf8a2c021f6d }}
+
           
